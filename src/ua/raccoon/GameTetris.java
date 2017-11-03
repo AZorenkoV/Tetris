@@ -61,7 +61,7 @@ public class GameTetris {
         frame.setSize(FIELD_WIDTH * BLOCK_SIZE + FIELD_DX*2, FIELD_HEIGHT * BLOCK_SIZE + FIELD_DY*2);
         frame.setLocation(START_LOCATION, START_LOCATION);
         frame.setResizable(false);
-        frame.addKeyListener(new KeyAdapter() {
+        canvasPanel.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent keyEvent) {
                 System.out.println("key press!!!");
